@@ -284,15 +284,24 @@ body {
   margin-bottom: 1rem;
 }
 
+/* CHANGED: Switched to flex to balance layout when there are only 3 images */
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the images if they don't fill a row */
   gap: 1rem;
+}
+
+.gallery-grid a {
+  /* CHANGED: Set width to roughly 1/3 (minus gap) so it fits on large screens */
+  flex: 0 1 calc(33.333% - 1rem); 
+  min-width: 250px; /* Ensures they don't get too small on tablets */
+  display: block;
 }
 
 .gallery-grid img {
   width: 100%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   border-radius: 16px;
   transition: all 0.3s ease;
@@ -412,21 +421,22 @@ footer {
     padding: 0 1rem;
   }
 
-  /* Prevent stacked massive blocks. Scroll buttons like desktop */
+  /* CHANGED: Ensure buttons wrap onto multi-lines to fit all 5 without scrolling */
   .heritage-nav-buttons {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding-bottom: 10px;
-    -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap; 
+    justify-content: center; /* Center the multi-row layout */
+    overflow-x: visible; /* Disable horizontal scrolling */
+    padding-bottom: 0;
   }
 
+  /* CHANGED: Adjust size to allow wrapping without being too cramped */
   .heritage-nav-btn {
-    flex: 0 0 auto;
-    min-width: auto;
-    white-space: nowrap;
-    font-size: 0.85rem;
-    padding: 0.6rem 1.2rem;
+    flex: 0 1 auto; 
+    min-width: calc(50% - 1rem); /* Roughly 2 buttons per row, adjusted for gap */
+    white-space: normal; /* Allow text to wrap if it gets very long */
+    font-size: 0.8rem;
+    padding: 0.6rem 1rem;
+    margin-bottom: 0.5rem; /* Add some vertical space between wrapped buttons */
   }
 
   .heritage-nav-wrapper.fixed-nav {
@@ -453,8 +463,21 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  /* CHANGED: Gallery for mobile */
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+  
+  .gallery-grid a {
+    flex: 0 1 calc(50% - 0.8rem); /* 2 per row on small screens */
+    min-width: auto;
+  }
+
+  .gallery-grid img {
+    height: 150px;
   }
 
   .heritage-section {
@@ -464,10 +487,6 @@ footer {
 
 /* Tablet (601px - 900px) */
 @media (min-width: 601px) and (max-width: 900px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .heritage-nav-btn {
     min-width: 140px;
     padding: 0.8rem 1rem;
