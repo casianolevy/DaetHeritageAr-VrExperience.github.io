@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Daet Cultural Heritage · clean design</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Clean Header - Light Blue -->
+<header class="main-header">
+  <div class="header-content">
+    <h1>Daet Cultural Heritage Experience</h1>
+    <p>Explore the history, culture, and heritage of Daet through photos and immersive 360° views.</p>
+    <button class="get-started-btn" onclick="scrollToMainContent()">Get Started</button>
+  </div>
+</header>
+
+<!-- Welcome Section - Separator -->
+<section class="welcome-section">
+  <div class="welcome-content">
+    <h2>Welcome to Daet Cultural Heritage</h2>
+    <p>Discover the most iconic historical and cultural landmarks of Daet, including monuments, churches, and centuries-old heritage sites.</p>
+  </div>
+</section>
+
+<!-- Main Content Area with Fixed Heritage Navigation -->
+<main class="main-container" id="main-content">
+  
+  <!-- Heritage Navigation Buttons - These will become fixed when scrolling -->
+  <div class="heritage-nav-wrapper" id="heritageNavWrapper">
+    <div class="heritage-nav-container">
+      <h3>Explore Heritage Sites</h3>
+      <div class="heritage-nav-buttons">
+        <button class="heritage-nav-btn" onclick="scrollToSection('site1')">
+          Jose Rizal Monument
+        </button>
+        <button class="heritage-nav-btn" onclick="scrollToSection('site2')">
+          Daet Cathedral
+        </button>
+        <button class="heritage-nav-btn" onclick="scrollToSection('site3')">
+          St. John the Baptist
+        </button>
+        <button class="heritage-nav-btn" onclick="scrollToSection('site4')">
+          Provincial Capitol
+        </button>
+        <button class="heritage-nav-btn" onclick="scrollToSection('site5')">
+          Bagasbas Beach
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE 1 - Jose Rizal Monument -->
+  <div id="site1" class="heritage-section">
+    <div class="heritage-card">
+      <div class="card-image">
+        <img src="morga.jpg" alt="First Jose Rizal Monument">
+      </div>
+      <div class="card-content">
+        <h2>First José Rizal Monument</h2>
+        <div class="description">
+          <p>Built in 1898, the First José Rizal Monument in Daet is the earliest memorial honoring the Philippines' national hero. Constructed by local townspeople, it predates Manila's famous Rizal Monument by over a decade. Its tiered stone structure features inscriptions of Rizal's novels and reflects the local community's admiration for his advocacy for freedom and education.</p>
+          <p>Over the years, it has remained a symbol of patriotism and pride for Daet. Students, tourists, and historians visit the site to understand the town's dedication to Rizal's ideals and the historical struggle for independence.</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Location</span>
+            <span class="info-value">Barangay Mangcayo, Daet, Camarines Norte</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Founded</span>
+            <span class="info-value">December 30, 1898</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Founders</span>
+            <span class="info-value">Local townspeople led by Lt. Colonels Antonio Sanz and Ildefonso Alegre</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Historical Significance</span>
+            <span class="info-value">First Rizal monument in the country; symbolizes patriotism and revolutionary ideals</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Architecture</span>
+            <span class="info-value">Three-tiered stone pylon with inscriptions of Rizal's novels</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Cultural Role</span>
+            <span class="info-value">Commemoration during Rizal Day; visited by students, historians, and tourists</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Notable Events</span>
+            <span class="info-value">Constructed two years after Rizal's execution; predates Luneta monument in Manila by 14 years</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Visitor Experience</span>
+            <span class="info-value">Photo opportunities, educational tours, historical learning</span>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <h3>Photo Gallery</h3>
+          <div class="gallery-grid">
+            <img src="morg1.jpg" alt="Rizal monument view 1">
+            <img src="morg2.jpg" alt="Rizal monument view 2">
+            <img src="morg3.jpg" alt="Rizal monument view 3">
+          </div>
+        </div>
+
+        <div class="vr-section">
+          <h3>360° Virtual Tour</h3>
+          <iframe class="vr-viewer" src="https://momento360.com/e/u/5afe69e892b24e6685ca64516fcd6fe1?utm_campaign=embed&utm_source=other&heading=294.79&pitch=-7.57&field-of-view=75&size=medium&display-plan=true" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE 2 - Daet Cathedral -->
+  <div id="site2" class="heritage-section">
+    <div class="heritage-card">
+      <div class="card-image">
+        <img src="cathmain.jpg" alt="Daet Cathedral">
+      </div>
+      <div class="card-content">
+        <h2>Daet Cathedral</h2>
+        <div class="description">
+          <p>The Daet Cathedral, originally established in the early days of Spanish missionary work, has been a central place of worship for centuries. The church began as a simple mission structure serving the early Catholic community in Camarines Norte. It witnessed the growth of local faith, surviving natural disasters and periods of rebuilding, reflecting the resilience and devotion of its parishioners.</p>
+          <p>Today, the cathedral stands as a historic landmark, connecting modern visitors with the town's early religious heritage. It remains a center for local traditions, festivals, and religious activities that celebrate the community's long-standing Catholic roots.</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Location</span>
+            <span class="info-value">Poblacion, Daet, Camarines Norte</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Founded</span>
+            <span class="info-value">Early 17th century (original mission structure)</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Founders</span>
+            <span class="info-value">Spanish missionaries and early parish community</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Historical Significance</span>
+            <span class="info-value">First major religious center in Daet; reflects spread of Catholicism in the province</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Architecture</span>
+            <span class="info-value">Early colonial-style church; bell tower; wooden interiors; historical relics</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Cultural Role</span>
+            <span class="info-value">Center for local traditions, festivals, and community gatherings</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Notable Events</span>
+            <span class="info-value">Rebuilt after natural disasters; site of early religious ceremonies</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Visitor Experience</span>
+            <span class="info-value">Historical tours, cultural immersion, photography of interiors and altar</span>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <h3>Photo Gallery</h3>
+          <div class="gallery-grid">
+            <img src="badtist.jpg" alt="Cathedral interior">
+            <img src="cath1.jpg" alt="Cathedral facade">
+            <img src="cath3.jpg" alt="Cathedral bell tower">
+          </div>
+        </div>
+
+        <div class="vr-section">
+          <h3>360° Virtual Tour</h3>
+          <iframe class="vr-viewer" src="https://momento360.com/e/u/254366385fd44706b00318c3f9e03ef7?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE 3 - St. John the Baptist Church -->
+  <div id="site3" class="heritage-section">
+    <div class="heritage-card">
+      <div class="card-image">
+        <img src="st.main.jpg" alt="St. John the Baptist Church">
+      </div>
+      <div class="card-content">
+        <h2>St. John the Baptist Church</h2>
+        <div class="description">
+          <p>Established in the early 17th century, St. John the Baptist Church is one of Daet's oldest parish churches. It has been a central place for spiritual and community life for generations. Despite restorations over the centuries, it preserves much of its colonial-era architecture and historical ambiance.</p>
+          <p>The church continues to serve the community with regular services, festivals, and cultural events. Visitors appreciate its historical value, architectural beauty, and its role in preserving Daet's religious heritage.</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Location</span>
+            <span class="info-value">Poblacion, Daet, Camarines Norte</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Founded</span>
+            <span class="info-value">Early 17th century</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Founders</span>
+            <span class="info-value">Spanish missionaries</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Historical Significance</span>
+            <span class="info-value">Among the oldest churches in Camarines Norte; center of Catholic community</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Architecture</span>
+            <span class="info-value">Colonial architecture, stone and wood structure, bell tower, traditional altar</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Cultural Role</span>
+            <span class="info-value">Religious and community events; local traditions preserved</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Notable Events</span>
+            <span class="info-value">Reconstructed over centuries; survived wars and natural disasters</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Visitor Experience</span>
+            <span class="info-value">Interior and exterior photography, cultural and religious tours</span>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <h3>Photo Gallery</h3>
+          <div class="gallery-grid">
+            <img src="images/st_john1.jpg" alt="St John facade">
+            <img src="st_john2.jpg" alt="St John altar">
+            <img src="st_john3.jpg" alt="St John side view">
+          </div>
+        </div>
+
+        <div class="vr-section">
+          <h3>360° Virtual Tour</h3>
+          <iframe class="vr-viewer" src="https://momento360.com/e/u/f1513c4ff6d24b359b64591f81c21735?utm_campaign=embed&utm_source=other&heading=38.67&pitch=-9.84&field-of-view=75&size=medium&display-plan=true" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE 4 - Daet Provincial Capitol -->
+  <div id="site4" class="heritage-section">
+    <div class="heritage-card">
+      <div class="card-image">
+        <img src="capmain.jpg" alt="Daet Provincial Capitol">
+      </div>
+      <div class="card-content">
+        <h2>Daet Provincial Capitol</h2>
+        <div class="description">
+          <p>The Daet Provincial Capitol, officially the Camarines Norte Provincial Capitol, serves as the seat of the provincial government. Located in the heart of Daet, this building is not only an administrative hub but also a landmark that reflects the province's governance and history. The current structure was built in the early 20th century, replacing older government houses, and stands as a testament to the province's development through the American colonial period and beyond.</p>
+          <p>Its architecture is a notable example of American neoclassical style adapted to the tropical climate, featuring wide porticos, high ceilings, and a central clock tower. The capitol complex includes a park where local events and celebrations are held, making it a focal point for both government functions and community life in Camarines Norte.</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Location</span>
+            <span class="info-value">Capitol Complex, Daet, Camarines Norte</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Built</span>
+            <span class="info-value">Early 20th century (circa 1920s–1930s)</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Architectural Style</span>
+            <span class="info-value">American Neoclassical with tropical adaptations</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Historical Significance</span>
+            <span class="info-value">Seat of provincial government for over a century; witnessed key political events</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Features</span>
+            <span class="info-value">Central clock tower, landscaped grounds, session hall, provincial offices</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Cultural Role</span>
+            <span class="info-value">Venue for Independence Day celebrations, provincial fiestas, and civic gatherings</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Notable Events</span>
+            <span class="info-value">Inauguration of governors, flag-raising ceremonies, and historical anniversaries</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Visitor Experience</span>
+            <span class="info-value">View the neoclassical facade, explore the park, photograph the clock tower</span>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <h3>Photo Gallery</h3>
+          <div class="gallery-grid">
+            <img src="cap2.jpg" alt="Provincial Capitol facade">
+            <img src="cap3.jpg" alt="Capitol clock tower">
+            <img src="cap4.jpg" alt="Capitol lobby">
+          </div>
+        </div>
+
+        <div class="vr-section">
+          <h3>360° Virtual Tour</h3>
+          <iframe class="vr-viewer" src="https://momento360.com/e/u/a8c7e4d10a784beb8454eed2fbc6685f?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE 5 - Bagasbas Beach -->
+  <div id="site5" class="heritage-section">
+    <div class="heritage-card">
+      <div class="card-image">
+        <img src="bgmain.jpg" alt="Bagasbas Beach">
+      </div>
+      <div class="card-content">
+        <h2>Bagasbas Beach</h2>
+        <div class="description">
+          <p>Bagasbas Beach is Daet's premier coastal destination, known for its long stretch of golden sand, consistent waves, and vibrant atmosphere. Located just a few kilometers from the town proper, it has become a popular spot for locals and tourists alike, offering a mix of relaxation, water sports, and natural beauty. The beach faces the Pacific Ocean, providing excellent conditions for surfing, especially from November to March.</p>
+          <p>Beyond surfing, Bagasbas features a boulevard lined with restaurants, cottages, and bars, making it a lively hub especially during weekends and holidays. It also serves as a venue for annual surfing competitions and cultural events, blending Daet's coastal charm with modern leisure.</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="info-item">
+            <span class="info-label">Location</span>
+            <span class="info-value">Barangay Bagasbas, Daet, Camarines Norte</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Natural Features</span>
+            <span class="info-value">Wide sandy beach, Pacific Ocean waves, coconut-fringed shoreline</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Cultural Role</span>
+            <span class="info-value">Traditionally a fishing area; evolved into a tourism and recreation center</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Activities</span>
+            <span class="info-value">Surfing, swimming, beach volleyball, sunset walks, surfing lessons</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Amenities</span>
+            <span class="info-value">Resorts, restaurants, cottages, surf shops, boardwalk</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Annual Events</span>
+            <span class="info-value">Bagasbas Surfing Cup, summer festivals, beach clean‑up drives</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Ecological Significance</span>
+            <span class="info-value">Coastal habitat; nesting site for marine turtles (occasional)</span>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Visitor Experience</span>
+            <span class="info-value">Sunrise views, surfing for beginners & pros, fresh seafood</span>
+          </div>
+        </div>
+
+        <div class="gallery-section">
+          <h3>Photo Gallery</h3>
+          <div class="gallery-grid">
+            <img src="bg1.jpeg" alt="Bagasbas boulevard">
+            <img src="bg2.jpg" alt="Surfers at Bagasbas">
+            <img src="bg3.jpg" alt="Bagasbas boulevard">
+          </div>
+        </div>
+
+        <div class="vr-section">
+          <h3>360° Virtual Tour</h3>
+          <iframe class="vr-viewer" src="https://momento360.com/e/u/d445d27cc31046f9880c353708603860?utm_campaign=embed&utm_source=other&heading=-710.08&pitch=-1.19&field-of-view=94.55&size=medium&display-plan=true" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; 2026 Daet Cultural Heritage — All Rights Reserved</p>
+  </div>
+</footer>
+
+<script>
+function scrollToMainContent() {
+  const mainContent = document.getElementById('main-content');
+  const headerHeight = document.querySelector('.main-header').offsetHeight;
+  const welcomeHeight = document.querySelector('.welcome-section').offsetHeight;
+  
+  // Calculate position to scroll to (right after welcome section)
+  const targetPosition = headerHeight + welcomeHeight;
+  
+  window.scrollTo({
+    top: targetPosition,
+    behavior: 'smooth'
+  });
+}
+
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  const navWrapper = document.getElementById('heritageNavWrapper');
+  const navHeight = navWrapper.classList.contains('fixed-nav') ? navWrapper.offsetHeight : 0;
+  
+  const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+  const offsetPosition = elementPosition - navHeight - 20;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth'
+  });
+}
+
+// Make heritage navigation fixed when scrolling past it
+window.addEventListener('scroll', function() {
+  const navWrapper = document.getElementById('heritageNavWrapper');
+  const mainContent = document.getElementById('main-content');
+  const mainContentTop = mainContent.offsetTop;
+  const scrollPosition = window.scrollY;
+  
+  if (scrollPosition > mainContentTop - 20) {
+    navWrapper.classList.add('fixed-nav');
+  } else {
+    navWrapper.classList.remove('fixed-nav');
+  }
+});
+</script>
+
+</body>
+</html>
